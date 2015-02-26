@@ -65,17 +65,18 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/Oracle',
-                'connect' => 'oci_connect',
-                'driver' => 'oracle',
+		'datasource' => 'oracle',
+                'persistent' => false,
+//                'connect' => 'oci_connect',
+//                'driver' => 'oracle',
                 //'persistent' => true,
-		'host' => '10.1.2.17',
+//		'host' => '10.1.2.17',
                 //'port' => '1521',
 		'login' => 'sgtc',
 		'password' => 'sgtc',
 		//'database' => '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.1.2.17)(PORT=1521))
                 //    (CONNECT_DATA=(SID=ISPS)))',
-		'database' => 'ISPS'
+		'database' => '10.1.2.27:1521/ISPS'
                 //'prefix' => '',
 		//'encoding' => 'utf8',
 	);
